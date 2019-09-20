@@ -1,0 +1,209 @@
+{
+	"baby": {
+		"idle": {
+			"vocalCue": ["..."],
+			"inspectionResult": "is watching the stream.",
+			"stages": [],
+			"onCompletion": "",
+			"maturityBoost": [0],
+			"maturityLoss": [0]
+		},
+		"maxAge": 0,
+		"maxAge": 3,
+		"botStates": ["food", "entertainment", "love"],
+		"userStates": [],
+		"food": {
+			"vocalCue": "pain",
+			"inspectionResult": "appears to be hungry. Try feeding it with !feed [words].",
+			"stages": ["looks less hungry!", "appears to be getting full..", "is full!"],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"sleep": {
+			"vocalCue": "pain",
+			"inspectionResult": "is sleeping peacefully in its petri dish cradle, but !wake might wake it up.",
+			"stages": ["is shifting around a little...", "is waking up a little..."],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"entertainment": {
+			"vocalCue": "pain",
+			"inspectionResult": "appears to want entertainment. Try singing to it with !sing [words]",
+			"stages": ["might be happier if more people were singing ;-)", "is bouncing a little", "is wiggling around!", "is super happy!"],
+			"onCompletion": "happy",
+			"onHalfCompletion": "happy",
+			"maturityBoost": [1, 2],
+			"maturityLoss": [-1]
+		},
+		"love": {
+			"vocalCue": "pain",
+			"inspectionResult": "appears to want love. Try holding it with !hold",
+			"stages": ["looks comfortable...", "is satisfied!"],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		}
+	},
+	"toddler": {
+		"minAge": 3,
+		"maxAge": 7,
+		"idle": {
+			"vocalCue": ["..."],
+			"inspectionResult": "is playing by itself with transistor toys.",
+			"stages": [],
+			"onCompletion": "",
+			"maturityBoost": [0],
+			"maturityLoss": [0]
+		},
+		"botStates": ["talk", "question", "lonely", "food", "sleep"],
+		"userStates": ["away"],
+		"food": {
+			"hasStages": true,
+			"vocalCue": "pain",
+			"inspectionResult": "appears to be hungry. Try feeding it with !feed [words].",
+			"stages": ["looks less hungry!", "appears to be getting full..", "is full!"],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"sleep": {
+			"hasStages": true,
+			"vocalCue": "pain",
+			"inspectionResult": "is napping, dreaming of bacteria, but !wake might wake it up..",
+			"stages": ["is shifting around a little...", "is waking up a little..."],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"lonely": {
+			"hasStages": false,
+			"vocalCue": "sad",
+			"inspectionResult": "appears to be lonely! Is there a channel that it can visit? If there is, say !playdate @channel_name!",
+			"stages": [],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"question": {
+			"hasStages": false,
+			"vocalCue": "sad",
+			"inspectionResult": "is waiting for you to answer the question!",
+			"stages": [],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [0]
+		},
+		"away": {
+			"vocalCue": "placeholder",
+			"inspectionResult": "is currently away!",
+			"stages": [],
+			"onCompletion": "",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"story": {
+			"hasStages": false,
+			"vocalCue": "sad",
+			"inspectionResult": "is waiting for you to tell it a story!",
+			"stages": [],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [0]
+		}
+	},
+	"adolescent": {
+		"minAge": 7,
+		"maxAge": 12,
+		"idle": {
+			"vocalCue": ["..."],
+			"inspectionResult": "is just sitting around, daydreaming about superbugs.",
+			"stages": [],
+			"onCompletion": "",
+			"maturityBoost": [0],
+			"maturityLoss": [0]
+		},
+		"botStates": ["talk", "question", "lonely", "sleep"],
+		"userStates": ["away"],
+		"lonely": {
+			"hasStages": false,
+			"vocalCue": "I want a playmate! can you find me a channel with another bot i can visit? Let me know with !playdate @channel_name!",
+			"inspectionResult": "appears to want a playmate! Is there a channel with another bot it can visit? Let it know with !playdate @channel_name!",
+			"stages": [],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"sleep": {
+			"hasStages": true,
+			"vocalCue": "pain",
+			"inspectionResult": "is sleeping, having nightmares about hand sanitizer. !wake might wake it up.",
+			"stages": ["is shifting around a little...", "is waking up a little..."],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"question": {
+			"hasStages": false,
+			"vocalCue": "sad",
+			"inspectionResult": "is waiting for you to answer the question!",
+			"stages": [],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [0]
+		},
+		"away": {
+			"vocalCue": "placeholder",
+			"inspectionResult": "is currently away!",
+			"stages": [],
+			"onCompletion": "",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		}
+	},
+	"teenager": {
+		"minAge": 12,
+		"maxAge": 18,
+		"idle": {
+			"vocalCue": ["..."],
+			"inspectionResult": "is lurking infectiously.",
+			"stages": [],
+			"onCompletion": "",
+			"maturityBoost": [0],
+			"maturityLoss": [0]
+		},
+		"botStates": ["talk", "question", "visit", "sleep"],
+		"userStates": ["away"],
+		"question": {
+			"hasStages": false,
+			"vocalCue": "sad",
+			"inspectionResult": "is waiting for you to answer the question!",
+			"stages": [],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [0]
+		},
+		"away": {
+			"vocalCue": "placeholder",
+			"inspectionResult": "is currently away!",
+			"stages": [],
+			"onCompletion": "",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		},
+		"sleep": {
+			"hasStages": true,
+			"vocalCue": "pain",
+			"inspectionResult": "is sleeping infectiously. !wake might wake it up.",
+			"stages": ["is shifting around a little...", "is waking up a little..."],
+			"onCompletion": "happy",
+			"maturityBoost": [1],
+			"maturityLoss": [-1]
+		}
+	},
+	"adult":{
+		"minAge": 18,
+		"maxAge": 24
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "twitch-chatbot",
+  "version": "0.0.1",
+  "description": "A twitch chatbot for HCI research",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "express": "^4.16.4",
+    "firebase": "^5.10.0",
+    "fs": "0.0.1-security",
+    "request": "^2.88.0",
+    "rita": "^1.3.89",
+    "tmi.js": "^1.4.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/ChatbotStudy/Pete-Chatbot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "twitch",
+    "chatbots",
+    "irc"
+  ],
+  "devDependencies": {}
+}
