@@ -163,3 +163,6 @@ The current file that the processed text is saved to. This is where the markov c
 
 ### out.csv
 Used for language during testing.
+
+### count_message_stats.py
+Used to count up the message statistics after the study.
